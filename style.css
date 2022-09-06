@@ -1,0 +1,126 @@
+@font-face {
+    font-family: NorseBold;
+    src: url("./Norse-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: Kiona;
+    src: url("./Kiona-Regular.ttf") format("truetype");
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.left {
+    height: 100vh;
+    width: 40vw;
+    background-image: url("./samsung-memory-tWEo5fPM8gk-unsplash.jpg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right {
+    height: 100vh;
+    width: 60vw;
+    background-color: rgb(240, 240, 240);
+    font-family: Kiona;
+}
+.logo img {
+    max-height: 100%;
+}
+.logo {
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35vh;
+    background-color: rgba(0,0,0,0.5);
+}
+.logo span {
+    font-family: NorseBold;
+    color: white;
+    font-size: 5rem;
+    margin-left: 2vw;
+}
+.left footer {
+    font-family: Kiona;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2vh;
+}
+footer a {
+    color: inherit;
+}
+.text p {
+    font-weight: bolder;
+    font-size: large;
+}
+.text {
+    margin-left: 3vw;
+}
+.text p:first-child {
+    margin-top: 15vh;
+}
+form {
+    background-color: white;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 12%);
+    border: 1px solid rgb(0 0 0 / 12%);
+    padding-left: 3vw;
+}
+form p {
+    font-size: large;
+}
+.row {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+.row > div {
+    display: flex;
+    flex-direction: column;
+}
+.row > div:first-child {
+    margin-right: 10vw;
+}
+.right > p > a {
+    color: rgb(173, 73, 173);
+    text-decoration: none;
+    cursor: pointer;
+}
+.right > button {
+    color: white;
+    background-color: rgb(173, 73, 173);
+    cursor: pointer;
+    margin: 4vh 0 0 3vw;
+    padding: 1vh 2vh;
+    border: none;
+    border-radius: 10px;
+}
+.right > button:hover {
+    background-color: purple;
+}
+.right > p {
+    margin-left: 3vw;
+}
+input {
+    border: 2px solid #E5E7EB;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+}
+/* input:invalid {
+    outline: none !important;
+    border-color: #e76646;
+    box-shadow: 0 0 10px #e76646;
+} */
