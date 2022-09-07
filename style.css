@@ -114,13 +114,18 @@ form p {
 input {
     border: 2px solid #E5E7EB;
 }
+input:invalid {
+    outline: none !important;
+    border-color: #e76646;
+    box-shadow: 0 0 10px #e76646;
+}
+input:placeholder-shown {
+    box-shadow: none;
+    outline: none !important;
+    border: 2px solid #E5E7EB;
+}
 input:focus { 
     outline: none !important;
     border-color: #719ECE;
     box-shadow: 0 0 10px #719ECE;
 }
-/* input:invalid {
-    outline: none !important;
-    border-color: #e76646;
-    box-shadow: 0 0 10px #e76646;
-} */
